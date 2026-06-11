@@ -1,6 +1,62 @@
 body{
-    background:red !important;
+    background-color: #fff7ef;
+    font-family: "Comfortaa", sans-serif;
+}
+#logo{ 
+    font-family: "Pacifico", cursive;
+    color: #2b2b2b;
+    font-size: 3rem;
+}
+#menu{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#bienvenida{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #titulo{
-    color: blue;
+    font-family: "Fredoka", sans-serif;   
+}
+#chimu{
+    color: #B89CF6;
+}
+#subtitulo{
+    font-size: 20px;
+}
+#btn_navbar{
+    background-color:#bb9ef3;
+
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#btn_navbar:hover{
+    background-color:#ac88f3;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#btn_bienvenida{
+    background-color:#bb9ef3;
+    padding: 15px 35px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#btn_bienvenida:hover{
+    background-color:#ac88f3;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#chimu{
+    background-color: white;
+}
+.paw_icon{
+    width: 60px;
+    height: 60px;
 }

@@ -7,21 +7,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Task Master</title>
     <link rel="stylesheet" href="{% static 'task/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 id="titulo">HOLA chimuela</h1>
-                <p>mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                    standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian
-                     at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy 
-                     text for Letraset's Body Type sheets. It has survived not only many decades, but also the 
-                     leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks
-                      to these sheets and more recently with desktop publishing software including versions of</p>
+<nav id="menu" class="navbar navbar-expand-lg">
+  <div class="container">
+    <img class="paw_icon" src="{% static 'task/icons/cat_2.svg' %}" alt="Chimu">
+    <a id="logo" class="navbar-brand" href="#">TaskMaster</a>   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul id="menu" class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registrate</a>
+        </li>
+        <li  class="nav-item">
+          <a id="btn_navbar" id="btn_bienvenida" class="nav-link" href="#">Iniciar Sesión</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="bienvenida" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h1 id="titulo"> Chimu te da la bienvenida a TaskMaster</h1> 
+                    <p id="subtitulo">TaskMaster es tu espacio para organizar ideas, tareas y objetivos. 
+                        Con la ayuda de Chimu, una curiosa gatita de ojos amarillos, cada pendiente se 
+                        convierte en un pequeño logro por celebrar.
+                    </p>
+                    <button id="btn_bienvenida">Registrate, chimu te espera!</button>
+                </div>
+                <div id="chimu" class="col-4">
+                    <p>*acá va imagen de chimu</p>
+                </div>
             </div>
-        </div>
+        </div>    
     </div>
 </body>
 </html>
