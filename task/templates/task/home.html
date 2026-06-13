@@ -15,7 +15,7 @@
 
 <nav id="menu" class="navbar navbar-expand-lg">
   <div class="container">
-    <img class="paw_icon" src="{% static 'task/icons/cat_2.svg' %}" alt="Chimu">
+    <img class="img_logo" src="{% static 'task/img/logo_chimu.png' %}" alt="Chimu">
     <a id="logo" class="navbar-brand" href="#">TaskMaster</a>   
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,10 +23,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul id="menu" class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Registrate</a>
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Características</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Conoce a Chimu</a>
         </li>
         <li  class="nav-item">
-          <a id="btn_navbar" id="btn_bienvenida" class="nav-link" href="#">Iniciar Sesión</a>
+          <a id="btn_navbar" class="nav-link" href="#">Iniciar Sesión</a>
         </li>
       </ul>
     </div>
@@ -36,19 +42,27 @@
     <div id="bienvenida" class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-8">
-                    <h1 id="titulo"> Chimu te da la bienvenida a TaskMaster</h1> 
-                    <p id="subtitulo">TaskMaster es tu espacio para organizar ideas, tareas y objetivos. 
+                <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                    <h1 id="titulo"> <span style="color:rgb(167, 138, 228)" >Chimu</span> te da la bienvenida a TaskMaster</h1> 
+                    <p id="subtitulo"><span style="color:rgb(167, 138, 228)" >TaskMaster</span> es tu espacio para organizar ideas, tareas y objetivos. 
                         Con la ayuda de Chimu, una curiosa gatita de ojos amarillos, cada pendiente se 
                         convierte en un pequeño logro por celebrar.
                     </p>
-                    <button id="btn_bienvenida">Registrate, chimu te espera!</button>
+                    <button id="btn_bienvenida">Registrate, chimu te espera!
+                      <img class="paw_icon" src="{% static 'task/icons/paw_white.svg' %}" alt="Chimu">
+                    </button>
                 </div>
-                <div id="chimu" class="col-4">
-                    <p>*acá va imagen de chimu</p>
+                <div id="chimu" class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                    <img src="{% static 'task/img/chimu_bienvenida.png' %}" alt="">
                 </div>
             </div>
         </div>    
+    </div>
+
+    <div id="container_dos">
+        <div id="container_dash" class="container">
+            <img src="{% static 'task/img/dashboard.png' %}" alt="">
+        </div>  
     </div>
 </body>
 </html>
